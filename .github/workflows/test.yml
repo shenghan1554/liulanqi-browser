@@ -1,0 +1,67 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-test:
+    name: 单元测试（Node ${{ matrix.node }} / windows-latest）
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [ '22', '24' ]
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 运行数据层单元测试
+        run: npm test
+
+  repo-hygiene:
+    name: 仓库卫生检查
+    runs-on: windows-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 确认没有误提交运行时 / 二进制 / 个人数据
+        shell: pwsh
+        run: |
+          $bad = Get-ChildItem -Recurse -File -Force |
+            Where-Object {
+              $_.FullName -notmatch '\\\.git\\' -and
+              ($_.Extension -in @('.exe', '.dll', '.pak', '.bin', '.dat', '.sig') -or
+               $_.FullName -match '\\(electron43-wv|node_modules|data|logs|dist)\\' -or
+               $_.Name -in @('portable.txt', 'LICENSES.chromium.html'))
+            }
+          if ($bad) {
+            Write-Host "::error::发现不应入库的文件："
+            $bad | ForEach-Object { Write-Host "  $($_.FullName)" }
+            exit 1
+          }
+          Write-Host "OK：未发现运行时二进制或个人数据。"
+
+      - name: 确认没有硬编码的个人绝对路径
+        shell: pwsh
+        run: |
+          $hits = Select-String -Path (Get-ChildItem -Recurse -File -Include *.js,*.ps1,*.py,*.cmd,*.json,*.md,*.nsi |
+                    Where-Object { $_.FullName -notmatch '\\\.git\\' }) -Pattern 'C:\\Users\\[^\\]+\\Desktop\\X' -ErrorAction SilentlyContinue
+          if ($hits) {
+            Write-Host "::error::发现硬编码的个人路径："
+            $hits | ForEach-Object { Write-Host "  $($_.Path):$($_.LineNumber): $($_.Line.Trim())" }
+            exit 1
+          }
+          Write-Host "OK：未发现硬编码个人路径。"

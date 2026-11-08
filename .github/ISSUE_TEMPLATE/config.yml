@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 构建与运行问题
+    url: https://github.com/shenghan1554/liulanqi-browser/blob/main/docs/BUILD.md
+    about: 先看构建说明——运行时准备、DRM、打包步骤都在这里
+  - name: 安全问题
+    url: https://github.com/shenghan1554/liulanqi-browser/blob/main/SECURITY.md
+    about: 请勿公开提交安全漏洞，按此文档私下报告
+  - name: 下载发布包
+    url: https://github.com/shenghan1554/liulanqi-browser/releases
+    about: 不想自己编译？直接下安装版或便携版

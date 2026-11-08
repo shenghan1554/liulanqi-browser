@@ -1,0 +1,713 @@
+{
+  "startedAt": "2026-11-05T03:02:32.168Z",
+  "baseUrl": "http://127.0.0.1:5803",
+  "total": 106,
+  "passed": 106,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "初始标签数量为 1",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "当前标签是新标签页",
+      "pass": true,
+      "detail": "browser://newtab"
+    },
+    {
+      "name": "默认主题为跟随系统",
+      "pass": true,
+      "detail": "auto"
+    },
+    {
+      "name": "默认壁纸为素白",
+      "pass": true,
+      "detail": "{\"type\":\"preset\",\"id\":\"paper\"}"
+    },
+    {
+      "name": "跟随系统主题已解析",
+      "pass": true,
+      "detail": "light / system=light"
+    },
+    {
+      "name": "标签栏渲染 1 个标签",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "顶部留出可拖动区域",
+      "pass": true,
+      "detail": {
+        "titlebar": "drag",
+        "tabs": "drag",
+        "tab": "no-drag",
+        "height": "46px",
+        "padTop": "10px"
+      }
+    },
+    {
+      "name": "上方内容区起点已下移",
+      "pass": true,
+      "detail": 92
+    },
+    {
+      "name": "新标签页时钟已渲染",
+      "pass": true,
+      "detail": "11:02"
+    },
+    {
+      "name": "新标签页问候语已渲染",
+      "pass": true,
+      "detail": "上午好"
+    },
+    {
+      "name": "新标签页壁纸已应用",
+      "pass": true,
+      "detail": "radial-gradient(900px 620px at 88% 8%, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0"
+    },
+    {
+      "name": "无书签时显示收藏提示",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "新标签页有搜索框",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "网页加载成功（标题正确）",
+      "pass": true,
+      "detail": "浏览器测试页"
+    },
+    {
+      "name": "网页 DOM 正确",
+      "pass": true,
+      "detail": "浏览器测试页"
+    },
+    {
+      "name": "标签页标题同步",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "地址栏显示当前网址",
+      "pass": true,
+      "detail": "http://127.0.0.1:5803/"
+    },
+    {
+      "name": "新标签首次导航后返回按钮不可用",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "跳转后返回按钮可用",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "后退回到测试页",
+      "pass": true,
+      "detail": "浏览器测试页"
+    },
+    {
+      "name": "后退后前进按钮可用",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "前进回到第二页",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "历史记录保存网页标题",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "history.json 已落盘且包含两条记录",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "落盘记录包含第二页标题",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "落盘记录标题不是域名",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "书签已保存",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "地址栏星标变为已收藏",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "显示添加书签提示",
+      "pass": true,
+      "detail": "已添加书签"
+    },
+    {
+      "name": "标签栏有 2 个标签",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "新标签页出现书签磁贴",
+      "pass": true,
+      "detail": "浏览器测试页"
+    },
+    {
+      "name": "新标签页内容渲染",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "菜单项渲染正常",
+      "pass": true,
+      "detail": 9
+    },
+    {
+      "name": "书签页标题正确",
+      "pass": true,
+      "detail": "书签"
+    },
+    {
+      "name": "书签页列出已收藏页面",
+      "pass": true,
+      "detail": [
+        "浏览器测试页"
+      ]
+    },
+    {
+      "name": "书签栏设置已开启",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "内容区域下移以容纳书签栏",
+      "pass": true,
+      "detail": "124px"
+    },
+    {
+      "name": "历史页标题正确",
+      "pass": true,
+      "detail": "历史记录"
+    },
+    {
+      "name": "历史页显示网页标题",
+      "pass": true,
+      "detail": [
+        "浏览器测试页",
+        "第二页",
+        "浏览器测试页",
+        "第二页",
+        "浏览器测试页"
+      ]
+    },
+    {
+      "name": "设置页标题正确",
+      "pass": true,
+      "detail": "设置"
+    },
+    {
+      "name": "壁纸选择器包含内置与自定义选项",
+      "pass": true,
+      "detail": 7
+    },
+    {
+      "name": "搜索引擎默认 Bing",
+      "pass": true,
+      "detail": "bing"
+    },
+    {
+      "name": "设置页书签栏开关状态同步",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "壁纸切换为「深海」",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "设置页选中态正确",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "新标签页背景为渐变壁纸",
+      "pass": true,
+      "detail": "radial-gradient(1100px 720px at 12% 82%, rgba(34, 94, 160, 0"
+    },
+    {
+      "name": "自定义壁纸生效（data URL）",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "设置中记录为自定义壁纸",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "浅色主题已应用",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "设置写入 theme=light",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "主题切回深色",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "无痕窗口用紫色按钮标识状态",
+      "pass": true,
+      "detail": {
+        "badgeGone": true,
+        "btnActive": true,
+        "attr": "1"
+      }
+    },
+    {
+      "name": "无痕窗口不再显示「无痕」文字徽标",
+      "pass": true,
+      "detail": {
+        "badgeGone": true,
+        "btnActive": true,
+        "attr": "1"
+      }
+    },
+    {
+      "name": "无痕窗口界面有水印「无痕模式」",
+      "pass": true,
+      "detail": {
+        "hidden": false,
+        "text": "无痕模式",
+        "z": "6",
+        "pe": "none"
+      }
+    },
+    {
+      "name": "水印不拦截鼠标点击",
+      "pass": true,
+      "detail": "none"
+    },
+    {
+      "name": "无痕窗口可正常浏览",
+      "pass": true,
+      "detail": "无痕测试页"
+    },
+    {
+      "name": "网页内也注入「无痕模式」水印",
+      "pass": true,
+      "detail": {
+        "content": "\"无痕模式\"",
+        "pointer": "none",
+        "position": "fixed"
+      }
+    },
+    {
+      "name": "无痕窗口使用独立会话",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "无痕浏览不写入历史记录",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:5803/",
+        "http://127.0.0.1:5803/second",
+        "http://127.0.0.1:5803/",
+        "http://127.0.0.1:5803/second",
+        "http://127.0.0.1:5803/"
+      ]
+    },
+    {
+      "name": "H.264 (AVC1) 视频解码可用",
+      "pass": true,
+      "detail": "probably"
+    },
+    {
+      "name": "H.264 High Profile 可用",
+      "pass": true,
+      "detail": "probably"
+    },
+    {
+      "name": "AAC (mp4a.40.2) 音频解码可用",
+      "pass": true,
+      "detail": "probably"
+    },
+    {
+      "name": "MediaSource 支持 H.264",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "MediaSource 支持 AAC",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "MediaSource 支持 H.264 + AAC（MP4）",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "WebCodecs H.264 解码器可用",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "WebCodecs AAC 解码器可用",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "页面处于安全上下文（DRM 前提）",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Widevine 密钥系统可用",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "keySystem": "com.widevine.alpha"
+      }
+    },
+    {
+      "name": "Widevine CDM 可创建 MediaKeys",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "关于页 Widevine 状态为已启用",
+      "pass": true,
+      "detail": {
+        "available": true,
+        "version": "4.10.3112.0",
+        "source": "内置组件",
+        "hostVersions": "10,11",
+        "codecs": "vp8,vp09,avc1,av01",
+        "signed": true,
+        "bootstrap": "已从 Edge 组件 复制 Widevine CDM 4.10.3112.0"
+      }
+    },
+    {
+      "name": "Widevine CDM 版本号有效",
+      "pass": true,
+      "detail": "4.10.3112.0"
+    },
+    {
+      "name": "显示「无法访问此网站」错误页",
+      "pass": true,
+      "detail": "无法访问此网站"
+    },
+    {
+      "name": "错误页有重试按钮",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Ctrl+T 快捷键被处理",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "标签页可关闭",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "输入网址原样解析",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "输入关键词走搜索引擎",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "输入 localhost 补全协议",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "书签可删除",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "下载记录已登记",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "下载文件已保存到磁盘",
+      "pass": true,
+      "detail": "C:\\Users\\sheng\\Desktop\\X\\e2e-dev-data\\Downloads\\sample.txt"
+    },
+    {
+      "name": "下载文件内容正确",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "下载页列出文件",
+      "pass": true,
+      "detail": "sample.txt"
+    },
+    {
+      "name": "下载列表可清空",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "书签栏显示书签条目",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "点击书签栏打开对应网页",
+      "pass": true,
+      "detail": "浏览器测试页"
+    },
+    {
+      "name": "菜单打开时网页视图已让位",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "菜单打开时保留页面快照元素",
+      "pass": true,
+      "detail": {
+        "exists": true,
+        "hidden": false,
+        "hasSrc": true
+      }
+    },
+    {
+      "name": "网页打开时可通过菜单进入设置",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "菜单关闭后浮层状态复位",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "关闭菜单后网页视图恢复",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "菜单关闭后快照隐藏",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "右上角无痕按钮可打开无痕窗口",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "无痕窗口不再显示「无痕」文字",
+      "pass": true,
+      "detail": {
+        "badge": false,
+        "text": ""
+      }
+    },
+    {
+      "name": "无痕窗口无痕按钮点亮为主题色",
+      "pass": true,
+      "detail": {
+        "active": true,
+        "pressed": "true",
+        "color": "rgb(201, 179, 255)",
+        "incogAttr": "1",
+        "tip": "无痕浏览中：不保存浏览记录、Cookie 与表单数据（点击可再开一个无痕窗口）"
+      }
+    },
+    {
+      "name": "无痕按钮颜色为紫色",
+      "pass": true,
+      "detail": "rgb(201, 179, 255)"
+    },
+    {
+      "name": "无痕窗口 data-incognito=1",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "无痕按钮提示文案说明状态",
+      "pass": true,
+      "detail": "无痕浏览中：不保存浏览记录、Cookie 与表单数据（点击可再开一个无痕窗口）"
+    },
+    {
+      "name": "右上角无痕按钮打开的无痕窗口带水印",
+      "pass": true,
+      "detail": {
+        "hidden": false,
+        "text": "无痕模式"
+      }
+    },
+    {
+      "name": "无痕窗口自带新标签页",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "普通窗口无痕按钮未点亮",
+      "pass": true,
+      "detail": {
+        "active": false,
+        "pressed": "false",
+        "color": "rgb(194, 200, 210)",
+        "incogAttr": "0",
+        "watermarkHidden": true
+      }
+    },
+    {
+      "name": "普通窗口无痕按钮为常规颜色",
+      "pass": true,
+      "detail": "rgb(194, 200, 210)"
+    },
+    {
+      "name": "普通窗口 data-incognito=0",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "普通窗口不显示无痕水印",
+      "pass": true,
+      "detail": {
+        "active": false,
+        "pressed": "false",
+        "color": "rgb(194, 200, 210)",
+        "incogAttr": "0",
+        "watermarkHidden": true
+      }
+    },
+    {
+      "name": "Chrome UI 无渲染层错误",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "notes": [
+    "本地测试服务器：http://127.0.0.1:5803",
+    "媒体能力：{\"canH264\":\"probably\",\"canH264High\":\"probably\",\"canAac\":\"probably\",\"msH264\":true,\"msAac\":true,\"msBoth\":true,\"secure\":true,\"videoDecoder\":true,\"audioDecoder\":true,\"widevine\":{\"ok\":true,\"keySystem\":\"com.widevine.alpha\"},\"mediaKeys\":true}",
+    "Widevine 状态：{\"available\":true,\"version\":\"4.10.3112.0\",\"source\":\"内置组件\",\"hostVersions\":\"10,11\",\"codecs\":\"vp8,vp09,avc1,av01\",\"signed\":true,\"bootstrap\":\"已从 Edge 组件 复制 Widevine CDM 4.10.3112.0\"}",
+    "菜单快照：{\"exists\":true,\"hidden\":false,\"hasSrc\":true}（overlayImage=yes）"
+  ],
+  "screenshots": [
+    {
+      "name": "e2e-01-newtab.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-01-newtab.png",
+      "size": 1314013
+    },
+    {
+      "name": "e2e-02-webpage.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-02-webpage.png",
+      "size": 34615
+    },
+    {
+      "name": "e2e-02-webpage.content.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-02-webpage.content.png",
+      "size": 652064
+    },
+    {
+      "name": "e2e-03-newtab-bookmark.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-03-newtab-bookmark.png",
+      "size": 1321657
+    },
+    {
+      "name": "e2e-04-bookmarks.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-04-bookmarks.png",
+      "size": 80397
+    },
+    {
+      "name": "e2e-05-bookmarks-bar.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-05-bookmarks-bar.png",
+      "size": 79177
+    },
+    {
+      "name": "e2e-06-history.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-06-history.png",
+      "size": 119976
+    },
+    {
+      "name": "e2e-07-settings.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-07-settings.png",
+      "size": 405386
+    },
+    {
+      "name": "e2e-08-wallpaper-ocean.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-08-wallpaper-ocean.png",
+      "size": 1388716
+    },
+    {
+      "name": "e2e-09-settings-light.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-09-settings-light.png",
+      "size": 403195
+    },
+    {
+      "name": "e2e-10-incognito.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-10-incognito.png",
+      "size": 101815
+    },
+    {
+      "name": "e2e-10-incognito.content.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-10-incognito.content.png",
+      "size": 93898
+    },
+    {
+      "name": "e2e-13-media.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-13-media.png",
+      "size": 53095
+    },
+    {
+      "name": "e2e-13-media.content.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-13-media.content.png",
+      "size": 26853
+    },
+    {
+      "name": "e2e-11-error.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-11-error.png",
+      "size": 85644
+    },
+    {
+      "name": "e2e-12-downloads.png",
+      "file": "C:\\Users\\sheng\\Desktop\\X\\browser\\screenshots\\e2e-12-downloads.png",
+      "size": 98398
+    }
+  ],
+  "domSnapshots": {
+    "newtab": "上午好\n11:02\n2026年11月5日 星期四\n在地址栏点击 ☆ 收藏常用网站，它们会出现在这里\n浏览器 · 简洁 · 无痕 · 无账号 · 无同步",
+    "testPage": "浏览器测试页\n\n本地测试页面加载成功\n\n打开第二页（新标签）",
+    "bookmarks": "书签\n\n收藏的网站只保存在本机；按 Ctrl+D 可以收藏当前页面。\n\n浏\n浏览器测试页\nhttp://127.0.0.1:5803/",
+    "history": "历史记录\n\n浏览记录仅保存在这台设备上，不会上传或同步。\n\n清除全部\n今天\n11:02\n浏\n浏览器测试页\n127.0.0.1\n11:02\n第\n第二页\n127.0.0.1\n11:02\n浏\n浏览器测试页\n127.0.0.1\n11:02\n第\n第二页\n127.0.0.1\n11:02\n浏\n浏览器测试页\n127.0.0.1",
+    "settings": "设置\n\n所有设置只保存在本机。没有账号，也不会上传或同步任何数据。\n\n外观\n壁纸\n\n新标签页的背景。可以选择内置壁纸，或上传自己的图片。\n\n极夜\n晨雾\n青碧\n暮霞\n深海\n素白\n自定义图片\n上传图片…\n恢复默认\n主题\n\n界面颜色，跟随系统时会随 Windows 设置自动切换。\n\n深色\n浅色\n跟随系统\n显示书签栏\n\n在地址栏下方显示一条书签快捷栏。\n\n搜索\n默认搜索引擎\n\n在地址栏输入文字时使用的搜索引擎。\n\nBing\n百度\nGoogle\nDuckDuckGo\n隐私与数据\n浏览记录\n\n清除保存在本机的全部浏览记录。\n\n清除浏览记录\nCookie 与缓存\n\n清除后，网站可能需要重新登录。\n\n清除 Cookie 与缓存\n无痕浏览\n\n不保存浏览记录、Cookie 和表单数据，关闭窗口后全部丢弃。\n\n打开无痕窗口\n关于\n浏览器\n\n版本 1.0.4 · Chromium 150.0.7871.250\n\n关于浏览器",
+    "media": "{\n  \"canH264\": \"probably\",\n  \"canH264High\": \"probably\",\n  \"canAac\": \"probably\",\n  \"msH264\": true,\n  \"msAac\": true,\n  \"msBoth\": true,\n  \"secure\": true,\n  \"videoDecoder\": true,\n  \"audioDecoder\": true,\n  \"widevine\": {\n    \"ok\": true,\n    \"keySystem\": \"com.widevine.alpha\"\n  },\n  \"mediaKeys\": true\n}",
+    "error": "无法访问此网站\nhttp://127.0.0.1:59999/\nERR_CONNECTION_REFUSED · 错误代码 -102\n重新加载\n回到新标签页",
+    "downloads": "下载内容\n\n文件默认保存到系统「下载」文件夹。\n\n清空列表\nsample.txt\n已完成 · C:\\Users\\sheng\\Desktop\\X\\e2e-dev-data\\Downloads\\sample.txt\n打开所在文件夹"
+  }
+}

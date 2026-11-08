@@ -1,0 +1,30 @@
+# 默认按文本处理，入库时统一 LF
+* text=auto eol=lf
+
+# 明确文本类型
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.nsi  text eol=lf
+*.ps1  text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Windows 批处理需要 CRLF
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+
+# 二进制
+*.png  binary
+*.ico  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.woff binary
+*.woff2 binary
+
+# 截图与报告在 diff 中按二进制统计，避免撑爆 PR
+screenshots/* linguist-documentation

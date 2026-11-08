@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark" data-incognito="0">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data: http: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'"
+  />
+  <meta name="color-scheme" content="dark light" />
+  <title>浏览器</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 图标库（内联 SVG sprite，全部离线可用） -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5" /></symbol>
+    <symbol id="i-forward" viewBox="0 0 24 24"><path d="M9.5 5.5 16 12l-6.5 6.5" /></symbol>
+    <symbol id="i-reload" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.35-5.65" /><path d="M20 4.5V10h-5.5" /></symbol>
+    <symbol id="i-stop" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" /></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" /></symbol>
+    <symbol id="i-min" viewBox="0 0 24 24"><path d="M6 12h12" /></symbol>
+    <symbol id="i-max" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5" /></symbol>
+    <symbol id="i-restore" viewBox="0 0 24 24"><rect x="5.5" y="8.5" width="10" height="10" rx="1.5" /><path d="M8.5 8.5v-3h10v10h-3" /></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4.05 3.95.95 5.55L12 16.6l-4.95 2.6.95-5.55L3.9 9.7l5.6-.8z" /></symbol>
+    <symbol id="i-star-filled" viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4.05 3.95.95 5.55L12 16.6l-4.95 2.6.95-5.55L3.9 9.7l5.6-.8z" fill="currentColor" /></symbol>
+    <symbol id="i-dots" viewBox="0 0 24 24"><circle cx="12" cy="5.5" r="1.5" fill="currentColor" stroke="none" /><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" /><circle cx="12" cy="18.5" r="1.5" fill="currentColor" stroke="none" /></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.2V12l3.1 2" /></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 4.5h11v15l-5.5-3.6-5.5 3.6z" /></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v10.5M7.5 10.5l4.5 4.5 4.5-4.5M5 19.5h14" /></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7.5h8M16.5 7.5H20M4 16.5h3.5M12 16.5h8" /><circle cx="14" cy="7.5" r="2.2" /><circle cx="8" cy="16.5" r="2.2" /></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 10.8V16" /><circle cx="12" cy="7.8" r="1" fill="currentColor" stroke="none" /></symbol>
+    <symbol id="i-incognito" viewBox="0 0 24 24"><path d="M4 12.5c0-3.3 2.1-5.5 5-5.5h6c2.9 0 5 2.2 5 5.5 0 4.2-3.3 6.5-8 6.5s-8-2.3-8-6.5z" /><circle cx="9.2" cy="12.2" r="1.5" fill="currentColor" stroke="none" /><circle cx="14.8" cy="12.2" r="1.5" fill="currentColor" stroke="none" /></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" /><path d="M16 16l4.5 4.5" /></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5.5" y="10.5" width="13" height="9" rx="2" /><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" /></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17" /><path d="M12 3.5c2.6 2.8 2.6 14.2 0 17M12 3.5c-2.6 2.8-2.6 14.2 0 17" /></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4.5 7h15M9.5 7V5h5v2M7 7l.9 12h8.2L17 7" /></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 6.5h5.8l2 2H20.5v10h-17z" /></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" /></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M9 5.5 15.5 12 9 18.5" /></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5l7 2.8v5.6c0 4.3-2.9 7.2-7 8.6-4.1-1.4-7-4.3-7-8.6V6.3z" /><path d="M9 12l2.2 2.2 4-4.2" /></symbol>
+    <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M4 6.5c4.7-3.6 11.3-3.6 16 0M6.8 10.2c3-2.2 7.4-2.2 10.4 0M9.6 13.9c1.4-1 3.4-1 4.8 0" /><circle cx="12" cy="17.6" r="1.2" fill="currentColor" stroke="none" /><path d="M4 4l16 16" /></symbol>
+    <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 20.5c-4.9 0-8.5-3.7-8.5-8.4S7.2 3.5 12.2 3.5c4.6 0 8.2 3 8.2 6.9 0 2.6-1.8 4.2-4 4.2h-1.6c-1.1 0-1.8.8-1.8 1.8 0 .6.2 1.1.2 1.7 0 1.4-1.1 2.4-2.5 2.4z" /><circle cx="8.4" cy="11.4" r="1" fill="currentColor" stroke="none" /><circle cx="12" cy="8.2" r="1" fill="currentColor" stroke="none" /><circle cx="15.8" cy="10.2" r="1" fill="currentColor" stroke="none" /></symbol>
+  </svg>
+
+  <div id="chrome">
+    <header id="titlebar">
+      <div id="tabs" role="tablist" aria-label="标签页"></div>
+      <div id="titlebar-right">
+        <button id="new-tab-btn" class="icon-btn" data-action="new-tab" title="新标签页 (Ctrl+T)" aria-label="新标签页">
+          <svg class="icon"><use href="#i-plus" /></svg>
+        </button>
+        <button id="incognito-btn" class="icon-btn" data-action="new-incognito-window" title="无痕浏览（新建无痕窗口，Ctrl+Shift+N）" aria-label="新建无痕窗口">
+          <svg class="icon"><use href="#i-incognito" /></svg>
+        </button>
+        <div id="drag-spacer"></div>
+        <div id="window-controls">
+          <button class="win-btn" data-action="win-min" title="最小化" aria-label="最小化">
+            <svg class="icon win-icon"><use href="#i-min" /></svg>
+          </button>
+          <button class="win-btn" data-action="win-max" title="最大化" aria-label="最大化">
+            <svg class="icon win-icon"><use id="win-max-icon" href="#i-max" /></svg>
+          </button>
+          <button class="win-btn win-close" data-action="win-close" title="关闭" aria-label="关闭">
+            <svg class="icon win-icon"><use href="#i-close" /></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="toolbar">
+      <div id="nav-buttons">
+        <button class="icon-btn nav-btn" id="btn-back" data-action="back" title="后退 (Alt+←)" aria-label="后退" disabled>
+          <svg class="icon"><use href="#i-back" /></svg>
+        </button>
+        <button class="icon-btn nav-btn" id="btn-forward" data-action="forward" title="前进 (Alt+→)" aria-label="前进" disabled>
+          <svg class="icon"><use href="#i-forward" /></svg>
+        </button>
+        <button class="icon-btn nav-btn" id="btn-reload" data-action="reload" title="刷新 (Ctrl+R)" aria-label="刷新">
+          <svg class="icon"><use id="reload-icon" href="#i-reload" /></svg>
+        </button>
+      </div>
+
+      <div id="address-wrap">
+        <span id="addr-icon" title="页面信息">
+          <svg class="icon"><use id="addr-icon-use" href="#i-globe" /></svg>
+        </span>
+        <input
+          id="address"
+          type="text"
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+          placeholder="搜索或输入网址"
+          aria-label="地址与搜索栏"
+        />
+        <button class="icon-btn" id="bookmark-btn" data-action="toggle-bookmark" title="添加书签 (Ctrl+D)" aria-label="添加书签">
+          <svg class="icon"><use id="bookmark-use" href="#i-star" /></svg>
+        </button>
+        <button class="icon-btn" id="menu-btn" data-action="toggle-menu" title="菜单" aria-label="菜单">
+          <svg class="icon"><use href="#i-dots" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="bookmarks-bar" hidden></div>
+  </div>
+
+  <div id="content">
+    <img id="page-snapshot" hidden alt="" />
+    <div id="page-host"></div>
+  </div>
+
+  <div id="incognito-watermark" hidden aria-hidden="true">无痕模式</div>
+  <div id="menu" hidden></div>
+  <div id="toasts"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

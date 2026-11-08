@@ -1,0 +1,43 @@
+# ── Electron / Chromium 运行时（体积大，且各平台不同，不入库）──────────────
+electron43-wv/
+electron43/
+electron/
+node_modules/
+dist/
+installer/out/
+out/
+
+# 运行时二进制（若被复制进仓库目录，一律忽略）
+*.exe
+*.dll
+*.pak
+*.bin
+*.dat
+*.sig
+*.so
+*.dylib
+LICENSES.chromium.html
+version
+portable.txt
+兼容模式启动.cmd
+
+# ── 本机数据与日志 ────────────────────────────────────────────────────────
+data/
+logs/
+*.log
+verify-install.log
+install-verify/
+
+# ── 构建/测试产物 ────────────────────────────────────────────────────────
+screenshots/e2e-*.composite.png
+screenshots/e2e-*.content.png
+screenshots/dev.png
+
+# ── 编辑器 / 系统 ────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,12 @@
+name: 其他
+description: 不属于 Bug 或功能建议的问题（构建、文档、兼容性咨询等）
+title: "[Other] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容
+      description: 请尽量包含版本、系统环境与已尝试的做法
+    validations:
+      required: true

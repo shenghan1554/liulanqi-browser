@@ -1,0 +1,36 @@
+{
+  "name": "liulanqi-browser",
+  "productName": "浏览器",
+  "version": "1.0.5",
+  "description": "浏览器 —— 基于 Chromium 的简洁开源桌面浏览器：无账号、无云同步、无遥测，数据只存本机",
+  "main": "src/main/main.js",
+  "author": "liulanqi-browser contributors",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenghan1554/liulanqi-browser.git"
+  },
+  "homepage": "https://github.com/shenghan1554/liulanqi-browser#readme",
+  "bugs": {
+    "url": "https://github.com/shenghan1554/liulanqi-browser/issues"
+  },
+  "keywords": [
+    "browser",
+    "chromium",
+    "electron",
+    "widevine",
+    "privacy",
+    "windows",
+    "browser-shell",
+    "liulanqi"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test --test-isolation=none test/store.test.js",
+    "e2e": "electron . --e2e --no-sandbox --disable-gpu --disable-breakpad"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
